@@ -1,6 +1,15 @@
 # bround
-bround, broundf, ubround, ubroundf - mantissa overflow round to nearest byte for C99 and above
+bround, broundf, ubround, ubroundf - mantissa overflow round to nearest un/signed byte for C99 and above
 
+## About
+
+```c
+uint8_t ubroundf(float x)
+{
+        x += (float)((1u   << (FLT_MANT_DIG - 1)) + (1u  << (FLT_MANT_DIG - 2)));
+        return *(uint8_t*)&x;
+}
+```
 ## Example
 
 VGA6 to RGB8 using `ubroundf` compared to SHR6
