@@ -4,7 +4,7 @@ bround, broundf, ubround, ubroundf - mantissa overflow round to nearest un/signe
 ## About
 
 ```c
-uint8_t ubroundf(float x)
+static inline uint8_t ubroundf(float x)
 {
         x += (float)((1u   << (FLT_MANT_DIG - 1)) + (1u  << (FLT_MANT_DIG - 2)));
         return *(uint8_t*)&x;
