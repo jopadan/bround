@@ -9,7 +9,7 @@ int main(int argc, char** argv)
 {
 	printf("vga: man/shr\n");
 	for(uint8_t i = 0; i < 64; i++)
-		printf("%03hhu: %03hhu/%03hhu\n", (uint8_t)i, vga2rgb((uint8_t)i), shr6lvl((uint8_t)i));
+		printf("%03hhu: %03hhu/%03hhu\n", i, vga2rgb(i), shr6lvl(i));
 	exit(EXIT_SUCCESS);
 }
 
