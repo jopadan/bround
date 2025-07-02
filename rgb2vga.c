@@ -3,7 +3,7 @@
 #include "bround.h"
 
 static inline uint8_t vga2rgb(uint8_t v6) { return ubroundf(v6*255.0f/63.0f); }
-static inline uint8_t shr6lvl(uint8_t v6) { v6 <<= 2; return v6 | (v6 >> 6);  }
+static inline uint8_t shr6lvl(uint8_t v6) { return (v6 << 2) | (v6 >> 4);  }
 
 static inline void print_term();
 static inline void print_vga();
