@@ -25,7 +25,7 @@ static inline void print_vga()
 	printf("\n");
 	for(uint8_t i = 0; i < 64; i++)
 	{
-		printf("\x1b[48;5:%hhum %03hhu \x1b[0m ", 16 + i, 16 + i);
+		printf("\x1b[48;5:%hhum %03hhu \x1b[0m ", i, i);
 		const uint8_t rgb = vga2rgb(i);
 		printf("\x1b[48;5:%hhum %03hhu \x1b[0m ", rgb, rgb);
 		const uint8_t shr = shr6lvl(i);
