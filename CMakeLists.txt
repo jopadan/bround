@@ -10,7 +10,7 @@ if( NOT CMAKE_BUILD_TYPE )
         set( CMAKE_BUILD_TYPE Release CACHE STRING "Choose the type of build." FORCE )
 endif()
 
-set( CMAKE_C_STANDARD 99 )
+set( CMAKE_C_STANDARD 23 )
 set( CMAKE_CXX_STANDARD 11 )
 
 if( NOT CMAKE_BUILD_TYPE STREQUAL Debug )

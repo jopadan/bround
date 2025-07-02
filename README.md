@@ -1,5 +1,5 @@
 # bround
-bround, broundf, ubround, ubroundf - mantissa overflow round to nearest un/signed byte for C99 and above
+bround, broundf, broundh, ubround, ubroundf, ubroundh - mantissa overflow round to nearest un/signed byte for C23 and above
 
 ## About
 
