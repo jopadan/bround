@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "bround.h"
 
-static inline uint8_t vga2rgb(uint8_t v6) { return ubroundh(v6*255.0f16/63.0f16); }
+static inline uint8_t vga2rgb(uint8_t v6) { return ubroundf(v6*255.0f/63.0f); }
 static inline uint8_t shr6lvl(uint8_t v6) { v6 <<= 2; return v6 | (v6 >> 6);  }
 
 static inline void print_term();
