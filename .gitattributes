@@ -1,1 +1,1 @@
-CMakeLists.txt linguist-detectable=false
+*.* linguist-language=C
